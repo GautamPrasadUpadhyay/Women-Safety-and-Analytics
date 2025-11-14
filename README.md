@@ -14,6 +14,7 @@ Instantly sends alert signals to:
 
 👨‍👩‍👧 Parents / Emergency Contacts
 
+
 Includes live GPS location, user details, and threat status.
 
 🎥 AI Threat Detection (OpenCV + YOLO)
@@ -23,6 +24,7 @@ Uses YOLO for real-time person, weapon, and suspicious activity detection.
 OpenCV processes live video frames from the user’s camera.
 
 Automatically triggers alerts if threats are detected.
+
 
 📍 Live Location Tracking
 
