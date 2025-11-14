@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Alert</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ADD8E6; /* Light blue background */
+            margin: 0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .emergency-button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #FFFFFF; /* White text color */
+            background-color: #FF0000; /* Red button color */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .emergency-button:hover {
+            background-color: #8B0000; /* Dark red when hovered */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Emergency Button Centered -->
+    <button class="emergency-button" onclick="sendTelegramMessage()">Emergency</button>
+
+    <script>
+    function sendTelegramMessage() {
+        // Your Telegram bot token and chat ID
+        const botToken = '7367104349:AAEfY7hIMX3AmIR0nrRSuYKJTUXLbyWCFKM'; // Your bot token
+        const chatId = '946411640'; // Replace with your chat ID
+        const message = 'SOS Signal Received, Threat Detected. Live Coordinates - Lat. 012°49\'30"N Lon. 080°02\'42"E. \n Details, visit: https://colab.research.google.com/drive/1PtCX-uC40wdHbUlwiY8JjE1D_rqChcE6#scrollTo=lkU9tn5s_B3s';
+
+        // Construct the API URL
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+        // Make a request to Telegram API
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    alert('Message sent successfully!');
+                } else {
+                    alert('Failed to send message: ' + data.description);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while sending the message.');
+            });
+    }
+    </script>
+
+</body>
+</html>

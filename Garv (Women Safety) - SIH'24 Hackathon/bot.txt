@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Telegram Message</title>
+</head>
+<body>
+    <h2>Send a Message via Telegram</h2>
+    <button onclick="sendTelegramMessage()">Send Message</button>
+
+    <script>
+        function sendTelegramMessage() {
+            // Your Telegram bot token and chat ID
+            const botToken = '7367104349:AAEfY7hIMX3AmIR0nrRSuYKJTUXLbyWCFKM'; // Your bot token
+            const chatId = '946411640'; // Replace with your chat ID
+            const message = 'SOS Signal Received, Threat Detected. Live Coordinates - -16.721760, -49.363331';
+
+            // Construct the API URL
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+            // Make a request to Telegram API
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        alert('Message sent successfully!');
+                    } else {
+                        alert('Failed to send message: ' + data.description);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while sending the message.');
+                });
+        }
+    </script>
+</body>
+</html>

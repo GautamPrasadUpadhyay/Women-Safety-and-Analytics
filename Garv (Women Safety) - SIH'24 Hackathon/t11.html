@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARV - Our Solution</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #091e25;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .highlight {
+            color: #c40101;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e9e9e9;
+            color: #091e25;
+        }
+
+        nav ul.right-menu li a {
+            background-color: #c40101;
+            color: white;
+            border: 2px solid #c40101;
+        }
+
+        nav ul.right-menu li a:hover {
+            background-color: white;
+            color: #c40101;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #2a9d8f;
+            border: 2px solid #2a9d8f;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: #2a9d8f;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+
+        /* Content Section Styles */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            color: #2a9d8f;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .section h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .section p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .section ul li span {
+            display: block;
+            font-weight: bold;
+        }
+
+        /* Slogan Highlight */
+        .slogan-highlight {
+            background-color: #d1e7dd;
+            border-left: 4px solid #2a9d8f;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .slogan-highlight h3 {
+            color: #2a9d8f;
+            font-size: 1.75em;
+            margin-bottom: 10px;
+        }
+
+        .slogan-highlight p {
+            color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            .section {
+                width: 90%;
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1><span class="highlight">GARV</span> Women Safety Solution</h1>
+            <nav>
+                <ul>
+                    <li><a href="t8.html">SOS Button</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="ec">Emergency Contacts</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section">
+        <div class="container">
+            <h2>Our Solution</h2>
+            <p>GARV is a cutting-edge solution designed to address women's safety concerns by leveraging advanced gesture recognition technology. Our system is capable of detecting potential threats in real-time, providing immediate alerts and ensuring rapid response.</p>
+            
+            <div class="slogan-highlight">
+                <h3>Technology Behind GARV</h3>
+                <p>GARV utilizes state-of-the-art algorithms and camera technology to detect specific gestures that are indicative of potential threats. This innovative approach minimizes false alarms and ensures that only genuine threats are identified.</p>
+                <ul>
+                    <li><span>Advanced Gesture Recognition:</span> Our system identifies aggressive gestures, physical altercations, and other signs of danger.</li>
+                    <li><span>Real-Time Monitoring:</span> The system operates continuously, ensuring that no threat goes unnoticed.</li>
+                    <li><span>Instant Alerts:</span> When a threat is detected, GARV sends immediate alerts to predefined contacts and emergency services.</li>
+                </ul>
+            </div>
+            
+            <h3>How GARV Works</h3>
+            <p>The GARV system is easy to set up and use:</p>
+            <style>
+                .image-container {
+                    display: flex;
+                    justify-content: space-between; /* Adjust space between images */
+                }
+                .image-container img {
+                    max-width: 48%; /* Adjust to fit within the container */
+                    height: auto;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <div class="image-container">
+            <img src="gesturenotdectected.jpg" alt="gesture not dectected" height="450" width="600">
+            <img src="gesturedectected.jpg" alt="gesturedectected" height="450" width="600">
+        </div>
+        <style>
+            .image-container {
+                display: flex;
+                justify-content: space-between; /* Adjust space between images */
+            }
+            .image-container img {
+                max-width: 48%; /* Adjust to fit within the container */
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+       
+    
+    <style>
+        .video-container {
+            text-align: side;
+        }
+        .video-container video {
+            display: inline-block;
+            width: 48%; /* Adjust width to fit within the container */
+            height: auto;
+            margin: 0 1%; /* Space between videos */
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <video controls>
+        <source src="t1.mp4" type="video/mp4" >
+    </video>
+    <video controls>
+        <source src="t22.mp4" type="video/mp4" >
+    </video>
+    <img src="t1....jpg" alt="" >
+</div>
+    
+            
+            <ul>
+                <li><span>Installation:</span> Place GARV cameras in strategic locations for maximum coverage.</li>
+                <li><span>Configuration:</span> Set up the system to recognize specific threat-indicating gestures.</li>
+                <li><span>Continuous Monitoring:</span> GARV monitors the environment in real-time, ready to detect any potential threats.</li>
+                <li><span>Alert and Response:</span> When a threat is detected, alerts are immediately sent to relevant parties for prompt action.</li>
+            </ul>
+            <a href="index.html" class="button">Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GARV Women Safety System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

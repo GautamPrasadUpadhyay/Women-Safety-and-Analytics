@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARV</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #091e25;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .highlight {
+            color: #c40101;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a.sos-button {
+            background-color: #c40101;
+            border: 2px solid #c40101;
+        }
+
+        nav ul li a.sos-button:hover {
+            background-color: #e9e9e9;
+            color: #c40101;
+        }
+
+        nav ul.right-menu li a {
+            background-color: #007bff; /* Blue color */
+            color: white;
+            border: 2px solid #007bff; /* Blue border */
+        }
+
+        nav ul.right-menu li a:hover {
+            background-color: white;
+            color: #007bff; /* Blue color */
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #2a9d8f;
+            border: 2px solid #2a9d8f;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: #2a9d8f;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+
+        /* Content Section Styles */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            color: #2a9d8f;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .section h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .section p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            .section {
+                width: 90%;
+                margin: 15px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul.right-menu {
+                margin-top: 10px;
+            }
+
+            .button {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .section h3 {
+                font-size: 1.2em;
+            }
+
+            .button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1><span class="highlight">GARV</span> Women Safety System</h1>
+            <nav>
+                <ul>
+                    <li><a href="sos" class="sos-button">SOS Button</a></li>
+                    <li><a href="Our Solutions">Our Solutions</a></li>
+                    <li><a href="ec">Emergency Contacts</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li><a href="https://coffrectioner.online/login">Login</a></li>
+                    <li><a href="https://coffrectioner.online/su">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to GARV</h2>
+            <p>GARV is a pioneering initiative aimed at enhancing women's safety through cutting-edge technology. Our mission is to create a safer environment for women using AI-driven analytics and real-time monitoring systems.</p>
+            <p>As part of the SMART INDIA HACKATHON 2024, we're dedicated to developing innovative solutions to reduce crimes against women and provide timely assistance in threatening situations.</p>
+            <a href="#get-involved" class="button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="Our Solutions" class="section">
+        <div class="container">
+            <h2>Our Solutions Us</h2>
+            <p><strong>GARV: Gender Awareness and Response Vigilance</strong></p>
+            <p><strong>Description:</strong></p>
+            <p>Gender Awareness and Response Vigilance (GARV) is an innovative initiative designed to enhance women's safety and security through the use of advanced technology and real-time monitoring systems. By leveraging cutting-edge AI-driven analytics, GARV aims to provide timely and effective responses to threatening situations, ensuring a safer environment for women.</p>
+            <p><strong>Core Components:</strong></p>
+            <ul>
+                <li><strong>Gender Awareness:</strong>
+                    <ul>
+                        <li>Education & Training: Programs to raise awareness Our Solutions gender-related issues and safety measures.</li>
+                        <li>Community Engagement: Building a network of informed individuals and organizations dedicated to women's safety.</li>
+                    </ul>
+                </li>
+                <li><strong>Response Mechanisms:</strong>
+                    <ul>
+                        <li>SOS Alert System: Quick and efficient emergency alert system to notify authorities and contacts in case of distress.</li>
+                        <li>Real-Time Monitoring: Continuous surveillance and tracking to ensure immediate response to any dangerous situations.</li>
+                    </ul>
+                </li>
+                <li><strong>Vigilance Measures:</strong>
+                    <ul>
+                        <li>AI-Driven Analytics: Use of artificial intelligence to predict and prevent potential threats based on data analysis.</li>
+                        <li>Safety Resources: Access to a comprehensive database of resources, emergency contacts, and support services.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Objectives:</strong></p>
+            <ul>
+                <li><strong>Enhance Safety:</strong> Provide a reliable safety net for women through proactive measures and real-time alerts.</li>
+                <li><strong>Empower Women:</strong> Equip women with tools and knowledge to protect themselves and seek help when needed.</li>
+                <li><strong>Reduce Crimes:</strong> Utilize technology to deter and prevent crimes against women by ensuring rapid responses.</li>
+                <li><strong>Promote Awareness:</strong> Increase public awareness Our Solutions gender safety and encourage community involvement.</li>
+            </ul>
+            <p><strong>Target Audience:</strong></p>
+            <ul>
+                <li><strong>Individuals:</strong> Women seeking enhanced personal safety and security.</li>
+                <li><strong>Organizations:</strong> Institutions focused on women's rights and safety, including educational and corporate entities.</li>
+                <li><strong>Communities:</strong> Groups aiming to improve overall safety and awareness in their areas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GARV. All rights reserved.</p>
+    </footer>
+</body>
+</html>
